@@ -37,6 +37,9 @@ Windowsユーザの方でPythonがはじめてという方はこちらも参照�
 
 出来上がった x68k 12x12フォントは 半角 + 全角(非漢字・第一水準・第二水準) のフルセットで 215,136 バイトであることが期待値です。
 
+特にマルミーニャ専用というわけではなく、任意のTTFフォントを変換できますが、実使用を考えると12dotビットマップ形式のものが前提になると思ってください。
+
+
 このデータを使うには小笠原博之さんの Hi-Speed Font Driver hfont.r が必要です。Vectorからダウンロード可能です。
 
 [Hi-Speed Font Driver](https://www.vector.co.jp/soft/x68/writing/se027934.html)
