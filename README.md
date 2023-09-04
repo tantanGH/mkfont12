@@ -1,6 +1,8 @@
 # mkfont12
 True Type Font to X680x0 12dot font converter
 
+---
+
 ### はじめに
 
 患者長ひっくさんが作成された12dotビットマップフォント「マルミーニャ」が素晴らしく、ぜひX680x0環境で使いたいと思いコンバータをPythonで作成してみました。
@@ -8,6 +10,7 @@ True Type Font to X680x0 12dot font converter
 「マルミーニャ」はBOOTHで頒布されています。BOOSTも可能です！
 * [マルミーニャ](https://booth.pm/ja/items/4927023)
 
+---
 
 ### インストール
 
@@ -22,6 +25,7 @@ Windowsユーザの方でPythonがはじめてという方はこちらも参照�
 
 [Windowsユーザ向けPython導入ガイド](https://github.com/tantanGH/distribution/blob/main/windows_python_for_x68k.md)
 
+---
 
 ### 使い方
 
