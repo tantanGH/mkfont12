@@ -13,24 +13,24 @@ def save_font(font_name, out_file):
       try:
         utf8_str = i.to_bytes(1,'big').decode('cp932')
         #print(utf8_str)
-        img = Image.new("1", (6, 12))
+        img = Image.new("1", (8, 12))
         draw = ImageDraw.Draw(img)
         draw.fontmode = "1"
         draw.text((0, 0), utf8_str, "white", font=font)
         font_data = img.tobytes()
         resize = None
-#        for x in [9,8,7,6]:
-#          overflow = False
-#          for y in range(12):
-#            if font_data[y*2 + 1] & (1 << (9-x)):
-#              overflow = True
-#              break
-#          if overflow:
-#            resize = x
+        for x in [7,6]:
+          overflow = False
+          for y in range(12):
+            if font_data[y] & (1 << (7-x)):
+              overflow = True
+              break
+          if overflow:
+            resize = x
         if resize == None:
           f.write(font_data)
-#        else:
-#          f.write(img.resize((resize,12)).tobytes())
+        else:
+          f.write(img.resize((resize,12)).tobytes())
       except UnicodeDecodeError:
         f.write(bytes([0] * 12))      
 
